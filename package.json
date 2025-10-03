@@ -1,0 +1,20 @@
+{
+  "name": "tehno-web",
+  "version": "1.0.0",
+  "description": "Created with CodeSandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doracb/Tehno-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doracb/Tehno-Web/issues"
+  },
+  "homepage": "https://github.com/doracb/Tehno-Web#readme"
+}
