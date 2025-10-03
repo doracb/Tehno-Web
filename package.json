@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/doracb/Tehno-Web/issues"
   },
-  "homepage": "https://github.com/doracb/Tehno-Web#readme"
+  "homepage": "https://github.com/doracb/Tehno-Web#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
