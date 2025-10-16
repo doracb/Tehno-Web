@@ -5,4 +5,5 @@ const getTotalArea = (squareDimensions) =>
 
 const squareDimensions = [3, 5, 12, 3, 5, 3];
 const result = getTotalArea(squareDimensions);
+
 console.log(result);
