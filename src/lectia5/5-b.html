@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        form {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+        }
+
+        #addButton {
+            margin-top: 5px;
+            background-color: #D8BFD8;
+        }
+
+        table {
+            background-color: #D8BFD8;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function adaugaInTabel() {
+            const tbody = document.querySelector("tbody");
+
+            const tr = document.createElement("tr");
+
+            const td1 = document.createElement("td");
+            td1.textContent = document.querySelector("#numeInput").value;
+            tr.appendChild(td1);
+            const td2 = document.createElement("td");
+            td2.textContent = document.querySelector("#telefonInput").value;
+            tr.appendChild(td2);
+
+            tbody.append(tr);
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("#addButton").addEventListener("click", adaugaInTabel);
+        })
+
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nume</th>
+                <th>Telefon</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+<form>
+    <label for="nume">Nume</label>
+    <input name="nume" id="numeInput" />
+    <label for="telefon">Numar telefon</label>
+    <input name="telefon" id="telefonInput" />
+    <input type="button" value="Adauga" id="addButton" />
+</form>
+
+</html>

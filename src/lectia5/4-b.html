@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        window.onload = () => {
+            const list = document.querySelector("#fruitList");
+            const message = document.querySelector("#message");
+
+            const listEvent = new CustomEvent("listEvent", {
+                detail: { text: "" }
+            });
+
+            list.addEventListener("click", function (e) {
+                const li = e.target.closest("li");
+                listEvent.detail.text = `Ai ales ${li.textContent}!`;
+                list.dispatchEvent(listEvent);
+            });
+
+            list.addEventListener("listEvent", function (e) {
+                message.textContent = e.detail.text;
+                message.style.color = "red";
+            })
+
+        };
+    </script>
+</head>
+
+<body>
+    <h2>Alege fructul tau preferat:</h2>
+    <ul id="fruitList">
+        <li>mar</li>
+        <li>banana</li>
+        <li>portocala</li>
+        <li>capsuna</li>
+    </ul>
+    <p id="message"></p>
+</body>
+
+</html>
