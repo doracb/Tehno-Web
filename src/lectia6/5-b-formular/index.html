@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript">
+        function currentTime() {
+            const now = new Date();
+            const time = now.toLocaleTimeString('ro-RO', { hour12: false });
+            document.querySelector("footer").textContent = time;
+        }
+
+        setInterval(currentTime, 1000);
+        currentTime(); 
+    </script>
+</head>
+
+<body>
+    <div class="bigContainer">
+        <h3>Contact Form</h3>
+        <div class="container">
+            <form action="javascript:" method="post">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstNameInput" placeholder="Your name" />
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastNameInput" placeholder="Your last name" />
+                <label for="country">Country</label>
+                <select name="country" id="countryInput">
+                    <option>Hungary</option>
+                    <option>Romania</option>
+                    <option>Poland</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Belarus</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subjectInput" placeholder="Write something.."></textarea>
+                <input type="button" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <span></span>
+</footer>
+
+</html>
