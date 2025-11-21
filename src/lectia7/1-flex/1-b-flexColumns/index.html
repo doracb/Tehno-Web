@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        body {
+            background-color: azure;
+            margin: 15px;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .column-title {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .item {
+            background-color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 12px;
+            border: 1px solid black;
+        }
+
+        .item:hover {
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="column-title">Column 1</div>
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <div class="column">
+            <div class="column-title">Column 2</div>
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <div class="column">
+            <div class="column-title">Column 3</div>
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+</body>
+
+</html>
